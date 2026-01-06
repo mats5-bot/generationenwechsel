@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aufruf zur Mitwirkung – Generationenwechsel im Bestand</title>
+  <meta name="description" content="Studie zum Generationenwechsel im Bestand (Innenministerium & TH Lübeck): Interviewpartner*innen und Projekte gesucht." />
+
+  <!-- Minimalistisch, ruhig, gut lesbar (auch für Ältere) -->
+  <style>
+    :root{
+      --bg: #fbfbfa;
+      --paper: #ffffff;
+      --text: #141414;
+      --muted: #4b4b4b;
+      --line: #e6e6e6;
+      --accent: #1a5fb4;
+      --radius: 14px;
+
+      /* Typografie: etwas größer + angenehme Zeilenlänge */
+      --base: 19px;
+      --leading: 1.65;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body{
+      background: var(--bg);
+      color: var(--text);
+      font: 400 var(--base)/var(--leading) ui-serif, Georgia, "Times New Roman", serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Links: klar, aber ruhig */
+    a{
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+    a:hover{ text-decoration-thickness: 0.12em; }
+    a:focus-visible, button:focus-visible{
+      outline: 3px solid rgba(26,95,180,.35);
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 18px 64px;
+    }
+
+    header{
+      padding: 8px 0 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 22px;
+    }
+
+    .kicker{
+      font: 600 14px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #5b5b5b;
+      margin: 0 0 10px;
+    }
+
+    h1{
+      font: 700 38px/1.15 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+
+    .lead{
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 72ch;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .actions{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 6px;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--text);
+      font: 650 16px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn.primary{
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .btn:hover{ filter: brightness(0.98); }
+
+    main{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    @media (min-width: 900px){
+      main{ grid-template-columns: 1.2fr .8fr; }
+    }
+
+    .card{
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px 18px 16px;
+    }
+
+    h2{
+      font: 700 18px/1.25 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+
+    p{ margin: 0 0 12px; }
+
+    .bullets{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    .bullets li{ margin: 6px 0; }
+
+    .meta{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .contact{
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #fafafa;
+      border: 1px solid var(--line);
+    }
+    .contact strong{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    footer{
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: #6a6a6a;
+      font: 14px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Barrierefreiheit: Respect reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">Aufruf zur Mitwirkung</div>
+      <h1>Studie zum Generationenwechsel im Bestand</h1>
+      <p class="lead">
+        Im Rahmen eines Forschungsvorhabens in Zusammenarbeit zwischen dem Innenministerium und der TH Lübeck
+        untersuchen wir Anlässe, Motive und Prozesse hinter vollzogenen Umzügen in der Nachfamilienphase.
+        Gesucht werden <strong>Interviewpartner*innen</strong> sowie Hinweise auf <strong>passende Wohnprojekte</strong>.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="mailto:Mats.soehrnsen@th-luebeck.de?subject=Studie%20Generationenwechsel%20im%20Bestand%20%E2%80%93%20Kontakt">
+          Per E-Mail Kontakt aufnehmen
+        </a>
+        <a class="btn" href="#worum-gehts">Mehr zur Studie</a>
+        <a class="btn" href="#wen-suchen-wir">Wen suchen wir?</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" id="worum-gehts">
+        <h2>Worum geht es?</h2>
+        <p>
+          Ursächlich für den Forschungsfokus ist die hohe gesellschaftliche Bedeutung einer bislang unterdurchschnittlichen
+          Wohnmobilität dieser Altersgruppe – sei es als Beitrag zur Entlastung angespannter Wohnungsmärkte,
+          zur Ressourcenschonung oder zur Unterstützung eines guten und selbstbestimmten Lebens im Alter.
+        </p>
+
+        <h2>Wie läuft die Teilnahme ab?</h2>
+        <p>
+          Die Studie möchte mit Menschen ins Gespräch kommen, die sich trotz bekannter Verbleibargumente freiwillig für einen
+          Umzug entschieden haben. Die qualitativen Interviews werden anonymisiert und in einem vertraulichen Rahmen durchgeführt.
+        </p>
+
+        <h2>Wen suchen wir?</h2>
+        <ul class="bullets" id="wen-suchen-wir">
+          <li>Interviewpartner*innen, die freiwillig umgezogen sind.</li>
+          <li>Insbesondere ehemalige Bewohnende großer Wohnflächen (z. B. Einfamilienhäuser), die zeitnah nach dem Auszug der Kinder verkleinert umgezogen sind.</li>
+          <li>Hinweise auf Wohnformen, z. B. genossenschaftliche, gemeinschaftliche oder altersgerechte Wohnformen, sowie Kontakte dorthin.</li>
+        </ul>
+
+        <h2>Ziel der Studie</h2>
+        <p>
+          Ziel der Studie ist es zu prüfen, ob und in welcher Form ein Handlungsbedarf zur Weiterentwicklung der bislang überwiegend
+          marktförmig organisierten Umzugs- und Wohnwechselprozesse besteht und wie diese künftig besser unterstützt werden könnten.
+          Zu einem späteren Zeitpunkt ist hierzu auch ein akteursübergreifender Workshop geplant.
+        </p>
+
+        <p>
+          <strong>Wir freuen uns sehr</strong>, wenn Sie passende Wohnprojekte oder direkte Kontakte zur Zielgruppe kennen und
+          diesen Aufruf weiterleiten oder mit uns in Kontakt treten.
+        </p>
+      </section>
+
+      <aside class="card">
+        <h2>Kontakt</h2>
+        <div class="contact">
+          <div class="meta">
+            <strong>Mats Söhrnsen</strong><br/>
+            Technische Hochschule Lübeck
+          </div>
+          <div class="meta">
+            E-Mail: <a href="mailto:Mats.soehrnsen@th-luebeck.de?subject=Studie%20Generationenwechsel%20im%20Bestand%20%E2%80%93%20Kontakt">Mats.soehrnsen@th-luebeck.de</a>
+          </div>
+          <div class="meta">
+            Tipp: Wenn Sie weiterleiten, genügt auch ein kurzer Hinweis oder Link auf diese Seite.
+          </div>
+        </div>
+
+        <p class="meta" style="margin-top:14px;">
+          <strong>Datenschutz:</strong> Die Interviews finden anonymisiert und vertraulich statt. Eine Teilnahme ist freiwillig.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      Stand: <span id="stand"></span> · Diese Seite ist als schlanker Onepager zur Weiterleitung gedacht.
+    </footer>
+  </div>
+
+  <script>
+    // Kleines Detail für Vertrauen (ohne Tracking): "Stand" automatisch setzen
+    const d = new Date();
+    const opts = { year: "numeric", month: "long", day: "2-digit" };
+    document.getElementById("stand").textContent = d.toLocaleDateString("de-DE", opts);
+  </script>
+</body>
+</html>
